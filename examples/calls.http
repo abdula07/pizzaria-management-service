@@ -1,0 +1,38 @@
+###CreateOrder
+POST http://localhost:6666/orders/create
+Content-Type: application/json
+
+
+
+[
+  {
+    "ProductId": 1
+  },
+  {"ProductId":  2}
+]
+
+
+
+###AddProducts
+POST http://localhost:6666/orders/items/18
+Content-Type: application/json
+
+[
+  {"ProductId": 15}
+]
+
+###GetOrder
+GET http://localhost:6666/orders/get/18
+Content-Type: application/json
+
+###OrderDone
+POST http://localhost:6666/access/orders/done/18
+X-Token: 111
+Content-Type: application/json
+
+###OrdersGet
+GET http://localhost:6666/access/orders/all/1
+X-Token: 111
+Content-Type: application/json
+
+
